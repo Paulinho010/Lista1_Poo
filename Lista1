@@ -1,1 +1,231 @@
-Teste
+//Questão 1:
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Digite um número inteiro: ");
+        int numero = scanner.nextInt();
+        int dobro = numero * 2;
+        System.out.println("O dobro de " + numero + " é " + dobro);
+    }
+}
+
+//Questão 2:
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Digite o primeiro número inteiro: ");
+        int numero1 = scanner.nextInt();
+        System.out.print("Digite o segundo número inteiro: ");
+        int numero2 = scanner.nextInt();
+        
+        // Calcula a média aritmética
+        double media = (numero1 + numero2) / 2.0;
+        
+        // Calcula a metade da diferença
+        int diferenca = numero1 - numero2;
+        double metadeDiferenca = diferenca / 2.0;
+        
+        // Imprime os resultados
+        System.out.println("A média aritmética é: " + media);
+        System.out.println("A metade da diferença é: " + metadeDiferenca);
+    }
+}
+
+//Questão 3:
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Digite a primeira nota: ");
+        double nota1 = scanner.nextDouble();
+        System.out.print("Digite a segunda nota: ");
+        double nota2 = scanner.nextDouble();
+        System.out.print("Digite a terceira nota: ");
+        double nota3 = scanner.nextDouble();
+        
+        // Calcula a média final
+        double media = (nota1 + nota2 + nota3) / 3.0;
+        
+        // Imprime a média final
+        System.out.println("A média final é: " + media);
+    }
+}
+
+//Questão 4:
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Digite o salário bruto: ");
+        double salarioBruto = scanner.nextDouble();
+        
+        // Calcula o desconto de 8%
+        double desconto = salarioBruto * 0.08;
+        
+        // Calcula o salário líquido
+        double salarioLiquido = salarioBruto - desconto;
+        
+        // Imprime os resultados
+        System.out.println("Salário bruto: " + salarioBruto);
+        System.out.println("Desconto de 8%: " + desconto);
+        System.out.println("Salário líquido: " + salarioLiquido);
+    }
+}
+
+//Questão 5:
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Digite o valor de A: ");
+        double a = scanner.nextDouble();
+        System.out.print("Digite o valor de B: ");
+        double b = scanner.nextDouble();
+        System.out.print("Digite o valor de C: ");
+        double c = scanner.nextDouble();
+        
+        // Calcula o valor do delta
+        double delta = Math.pow(b, 2) - 4 * a * c;
+        
+        // Imprime o valor do delta
+        System.out.println("O valor do delta é: " + delta);
+    }
+}
+
+//Questão 6:
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Digite a distância em quilômetros: ");
+        double distanciaKm = scanner.nextDouble();
+        
+        // Converte a distância para metros
+        double distanciaMetros = distanciaKm * 1000;
+        
+        // Imprime a distância em metros
+        System.out.println("A distância em metros é: " + distanciaMetros);
+    }
+}
+
+//Questão 7:
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Digite a quilometragem inicial: ");
+        double kmInicial = scanner.nextDouble();
+        System.out.print("Digite a quilometragem final: ");
+        double kmFinal = scanner.nextDouble();
+        
+        // Calcula a quilometragem percorrida
+        double kmPercorrida = kmFinal - kmInicial;
+        
+        // Imprime a quilometragem percorrida
+        System.out.println("A quilometragem percorrida foi: " + kmPercorrida);
+    }
+}
+
+//Questão 8:
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Digite a quantidade de alunos do sexo masculino: ");
+        int alunosMasculino = scanner.nextInt();
+        System.out.print("Digite a quantidade de alunos do sexo feminino: ");
+        int alunosFeminino = scanner.nextInt();
+        System.out.print("Digite a quantidade de alunos aprovados: ");
+        int alunosAprovados = scanner.nextInt();
+        
+        // Calcula o total de alunos
+        int totalAlunos = alunosMasculino + alunosFeminino;
+        
+        // Calcula a porcentagem de alunos do sexo masculino
+        double porcentagemMasculino = ((double) alunosMasculino / totalAlunos) * 100;
+        
+        // Calcula a porcentagem de alunos do sexo feminino
+        double porcentagemFeminino = ((double) alunosFeminino / totalAlunos) * 100;
+        
+        // Calcula a porcentagem de alunos aprovados
+        double porcentagemAprovados = ((double) alunosAprovados / totalAlunos) * 100;
+        
+        // Imprime os resultados
+        System.out.println("Total de alunos: " + totalAlunos);
+        System.out.println("Porcentagem de alunos do sexo masculino: " + porcentagemMasculino + "%");
+        System.out.println("Porcentagem de alunos do sexo feminino: " + porcentagemFeminino + "%");
+        System.out.println("Porcentagem de alunos aprovados: " + porcentagemAprovados + "%");
+    }
+}
+
+//Questão 9:
+import java.util.Scanner;
+
+public class Camelô {
+    public static void main(String[] args) {
+        double precoMiniGame = 6.95;
+        double precoCalculadora = 3.50;
+        double precoCaneta = 1.20;
+        int qtdMiniGames, qtdCalculadoras, qtdCanetas;
+        
+        Scanner leitor = new Scanner(System.in);
+        
+        System.out.print("Digite a quantidade de mini-games vendidos: ");
+        qtdMiniGames = leitor.nextInt();
+        
+        System.out.print("Digite a quantidade de calculadoras vendidas: ");
+        qtdCalculadoras = leitor.nextInt();
+        
+        System.out.print("Digite a quantidade de canetas vendidas: ");
+        qtdCanetas = leitor.nextInt();
+        
+        double faturamentoMiniGames = qtdMiniGames * precoMiniGame;
+        double faturamentoCalculadoras = qtdCalculadoras * precoCalculadora;
+        double faturamentoCanetas = qtdCanetas * precoCaneta;
+        double faturamentoTotal = faturamentoMiniGames + faturamentoCalculadoras + faturamentoCanetas;
+        
+        System.out.println("\nFaturamento de Mini-games: R$ " + faturamentoMiniGames);
+        System.out.println("Faturamento de Calculadoras: R$ " + faturamentoCalculadoras);
+        System.out.println("Faturamento de Canetas: R$ " + faturamentoCanetas);
+        System.out.println("Faturamento Total: R$ " + faturamentoTotal);
+    }
+}
+
+//Questão 10:
+import java.util.Scanner;
+
+public class Campeonato {
+    public static void main(String[] args) {
+        int vitorias, derrotas, empates;
+        Scanner leitor = new Scanner(System.in);
+        
+        System.out.print("Digite a quantidade de vitórias do time: ");
+        vitorias = leitor.nextInt();
+        
+        System.out.print("Digite a quantidade de derrotas do time: ");
+        derrotas = leitor.nextInt();
+        
+        System.out.print("Digite a quantidade de empates do time: ");
+        empates = leitor.nextInt();
+        
+        int totalJogos = vitorias + derrotas + empates;
+        int pontosDisputados = totalJogos * 3;
+        int pontosGanhos = (vitorias * 3) + empates;
+        int pontosPerdidos = pontosDisputados - pontosGanhos;
+        
+        System.out.println("\nQuantidade total de jogos: " + totalJogos);
+        System.out.println("Quantidade de pontos disputados: " + pontosDisputados);
+        System.out.println("Quantidade de pontos ganhos: " + pontosGanhos);
+        System.out.println("Quantidade de pontos perdidos: " + pontosPerdidos);
+    }
+}
